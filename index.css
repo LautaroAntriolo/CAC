@@ -1,0 +1,65 @@
+body {
+    background-color: #fff;
+}
+
+.nav {
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+
+#A div {
+    /* display: inline-table; */
+    display: table-cell;
+}
+
+#A div img {
+    text-decoration: none;
+    height: 250px;
+    width: 250px;
+    object-position: absolute;
+    text-align: center;
+}
+
+.nav ul a {
+    background-color: red;
+}
+
+.titulo {
+    background-color: #000;
+    color: white;
+}
+
+.cabecera {
+    background-color: aqua;
+}
+
+.d1 {
+    background-color: cadetblue;
+}
+
+.d1 p {
+    background-color: rosybrown;
+}
+
+.d1 .titfo {
+    background-color: sienna;
+}
+
+.primate1 {
+    background-color: yellow;
+    border: 4px;
+}
+
+.primate2 {
+    background-color: teal;
+}
+
+.primate3 {
+    background-color: red;
+}
+
+.d1 h1 {
+    background-color: grey;
+    color: blue;
+}
