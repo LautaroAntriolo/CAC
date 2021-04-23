@@ -4,15 +4,48 @@ body {
 
 .nav {
     background-color: green;
-    color: white;
-    text-align: center;
+    padding: 2px;
 }
 
+.nav ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0px;
+    margin-bottom: -10px;
+    padding: 3px;
+    overflow: hidden;
+    position: fixed;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+}
+
+.nav ul li {
+    float: left;
+    margin: 4px;
+    text-decoration: none;
+}
+
+
+}
+.nav ul li a {
+    display: inline-block;
+    font-size: 50px;
+    text-decoration: none;
+    padding: 50;
+    margin: 5px 5px 5px 5px;
+}
+.titulo h1 {
+    background-color: lavender;
+    padding: 35px;
+    font-style: normal;
+    color: red;
+}
 #A div {
     /* display: inline-table; */
+    
     display: table-cell;
 }
-
 #A div img {
     text-decoration: none;
     height: 250px;
@@ -20,46 +53,51 @@ body {
     object-position: absolute;
     text-align: center;
 }
-
 .nav ul a {
     background-color: red;
 }
-
 .titulo {
     background-color: #000;
     color: white;
 }
-
 .cabecera {
     background-color: aqua;
 }
-
 .d1 {
     background-color: cadetblue;
 }
-
 .d1 p {
+    padding: 24px;
+    margin: 4px;
     background-color: rosybrown;
+    text-align: center;
+    font-style: initial;
+    font-size: 24px;
 }
-
+.titfo {
+    text-align: center;
+    padding: 5px;
+    margin: 4px;
+    height: 30%;
+    width: 80%;
+}
 .d1 .titfo {
     background-color: sienna;
 }
-
 .primate1 {
     background-color: yellow;
     border: 4px;
 }
-
 .primate2 {
     background-color: teal;
 }
-
 .primate3 {
     background-color: red;
 }
-
 .d1 h1 {
     background-color: grey;
     color: blue;
+    font-style: normal;
+    font-size: 34px;
+    text-align: center;
 }
