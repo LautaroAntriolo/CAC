@@ -55,6 +55,11 @@ a:link {
     width: 100%;
 }
 
+.subtitulo img {
+    background-image: initial;
+    mask-image: unset;
+}
+
 main {
     justify-content: center;
     width: 100%;
@@ -71,9 +76,26 @@ main {
 }
 .titulo h1 {
     background-color: lavender;
-    padding: 35px;
+    padding: 10px;
     font-style: normal;
     color: red;
+    font-size: 52px;
+    font-family: 'Amatic SC', cursive;
+}
+.titulo h1 .tit {
+    color: lawngreen;
+    background-color: lightcoral;
+    height: 59px;
+    width: 400px;
+    border: 8px solid black;
+}
+.titulo p {
+    background-color: lavender;
+    padding: 4px;
+    font-style: normal;
+    color: red;
+    font-size: 19px;
+    font-family: 'Amatic SC', cursive;
 }
 #A div {
     /* display: inline-table; */
@@ -92,7 +114,16 @@ main {
     color: white;
 }
 .cabecera {
-    background-color: aqua;
+    background-color: wheat;
+}
+.cabecera h4 {
+    padding: 6px;
+    margin: 18px;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
 }
 .d1 {
     background-color: cadetblue;
