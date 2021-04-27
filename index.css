@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -14,9 +15,19 @@ header {
 }
 
 .nav {
-    background-color: black;
+    background-color: transparent;
     width: auto;
     display: inline-flexbox;
+}
+
+.nav img {
+    background-color: transparent;
+    width: 50px;
+    display: inline-flexbox;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    background: linear-gradient(to bottom, blue, white);
 }
 
 .nav ul {
@@ -68,6 +79,19 @@ a:link {
 
 .cabecera {
     width: 100%;
+    background-color: wheat;
+    /* overflow: hidden; */
+    position: sticky;
+}
+
+.cabecera h4 {
+    padding: 6px;
+    margin: 18px;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .subtitulo img {
@@ -120,66 +144,13 @@ main {
     text-align: center;
 }
 
-#A div {
-    /* display: inline-table; */
-    display: table-cell;
+main .img {
+    width: 350px;
+    height: 400px;
 }
 
-#A div img {
-    text-decoration: none;
-    height: 250px;
-    width: 250px;
-    object-position: absolute;
-    text-align: center;
-}
+/* DESDE ACA VA LO NUEVO */
 
-.cabecera {
-    background-color: wheat;
-}
-
-.cabecera h4 {
-    padding: 6px;
-    margin: 18px;
-    margin-left: 25px;
-    margin-right: 25px;
-    font-size: 20px;
-    text-align: center;
-    text-decoration: none;
-}
-
-.d1 {
-    background-color: cadetblue;
-}
-
-.d1 p {
-    padding: 24px;
-    margin: 4px;
-    background-color: rosybrown;
-    text-align: center;
-    font-style: initial;
-    font-size: 24px;
-}
-
-.titfo {
-    text-align: center;
-    padding: 5px;
-    margin: 4px;
-    height: 30%;
-    width: 80%;
-}
-
-.d1 .titfo {
-    background-color: sienna;
-}
-
-.primate1 {
-    background-color: yellow;
-}
-
-.primate2 {
-    background-color: teal;
-}
-
-.primate3 {
-    background-color: red;
+.tabla1 {
+border: 3px solid black;
 }
