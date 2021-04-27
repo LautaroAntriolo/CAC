@@ -19,15 +19,18 @@ header {
     width: auto;
     display: inline-flexbox;
 }
-
-.nav img {
-    background-color: transparent;
+/* ESTA IMG ES EL LOGOTIPO */
+.nav img { 
     width: 50px;
     display: inline-flexbox;
     margin: 0px;
+    margin-right:2px;
     padding: 0px;
     float: left;
     background: linear-gradient(to bottom, blue, white);
+}
+.nav img:hover{
+    background: linear-gradient(to bottom,red,orange);
 }
 
 .nav ul {
@@ -56,7 +59,7 @@ nav ul li a {
 }
 
 .nav ul a:hover {
-    background-color: rgb(202, 153, 29);
+    background-color: rgb(206, 7, 7);
 }
 
 a:visited,
@@ -79,8 +82,8 @@ a:link {
 
 .cabecera {
     width: 100%;
-    background-color: wheat;
-    /* overflow: hidden; */
+    background: linear-gradient( rgb(22, 150, 248), white);
+    overflow: hidden;
     position: sticky;
 }
 
@@ -99,31 +102,25 @@ a:link {
     mask-image: unset;
 }
 
-main {
-    justify-content: center;
-    width: 100%;
-}
-
 .nav ul li a {
     display: center;
     font-size: 18px;
     text-decoration: none;
 }
 
+.cabecera .titulo {
+    padding:45px;
+}
 .titulo h1 {
-    padding: 10px;
     font-size: 92px;
     font-family: 'Amatic SC', cursive;
     text-shadow: 2px -3px 9px black;
 }
 
-.titulo h1 .tit {
-    margin-top: 55px;
-    color: white;
-    background-color: transparent;
-    height: 99px;
-    width: 900px;
-    /* border: 2px solid black; */
+.titulo .tit h1{
+    color:white;
+    text-decoration:underline white;
+    animation-duration: 2s; 
 }
 
 .titulo p {
@@ -134,6 +131,8 @@ main {
     color: red;
     font-size: 23px;
     font-family: 'Amatic SC', cursive;
+    animation-duration: 3s; 
+    --animate-delay: 0.9s;
 }
 
 .d1 h1 {
@@ -144,10 +143,15 @@ main {
     text-align: center;
 }
 
+main {
+    justify-content: center;
+    width: 100%;
+}
 main .img {
     width: 350px;
     height: 400px;
 }
+
 
 /* DESDE ACA VA LO NUEVO */
 
