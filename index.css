@@ -2,12 +2,13 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    text-align:center;
+    text-align: center;
 }
-*p{
+
+*p {
     text-align: center;
     font-family: sans-serif;
-    color:black;
+    color: black;
 }
 
 body {
@@ -19,74 +20,76 @@ body {
 header {
     width: 100vh;
     position: fixed;
-    z-index: 100;
-}
-
-.nav {
-    background-color: transparent;
-    width: auto;
-    display: inline-flexbox;
-    width: 0.3rem;
-    height: 0.3rem;
+    position: absolute;
 }
 
 /* ESTA IMG ES EL LOGOTIPO */
-.nav img {
+.nav0 {
+    background: linear-gradient(to bottom, blue, white);
+    width: 6.3rem;
+    height: 6rem;
+    border-radius: 0.6rem;
+    display: inline-flexbox;
+    float:left;
+}
+
+.nav0 img {
     width: 6rem;
     height: 6rem;
+    border-radius: 3rem;
     display: inline-flexbox;
-    border-radius:3rem;
     margin-left: 3rem;
     margin-right: 3rem;
-    position:relative;
-    position:static;
-    float: left;
     background: linear-gradient(to bottom, blue, white);
     transition: all 300ms ease 0ms;
-    z-index: 1;
+    z-index: 10;
+    float:left;
 
 }
 
-
+.nav{
+    float:left;
+    width: 9rem;
+    margin-left:50px;
+    margin-top:9px;
+    
+}
 .nav ul {
     list-style-type: none;
     text-align: center;
-    font-size:2rem;
+    font-size: 2rem;
     overflow: hidden;
-    background-color: rgb(148, 7, 7);
+    background-color:transparent;
     position: -webkit-sticky;
-    position:fixed;
+    position: fixed;
     position: sticky;
-    top: 0;
-    height: 15vh;
+    height: 7.8vh;
     width: 100vw;
+    z-index: 1;
 }
 
 .nav ul li {
-    display: inline-flex;
     float: left;
     background-color: transparent;
-    height:16vh;
-    text-align:center;
 }
 
 nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
+    color:white;
     padding: 14px 16px;
     text-decoration: none;
 }
+
 .nav ul li a {
     display: center;
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-decoration: none;
 }
 
 
-.nav img:hover {
+.nav0 img:hover {
     background: linear-gradient(to bottom, red, orange);
-    -webkit-transform: rotate(360deg);transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 .nav ul a:hover {
@@ -99,17 +102,17 @@ a:link {
     text-decoration: none;
 }
 
+/* ARRANCA LA CABECERA */
 
 .cabecera {
-    padding-top:2vw;
     width: 100vw;
     background: linear-gradient(rgb(0, 0, 0), white);
-    border:solid black;
-    margin:0;   
+    border: solid black;
 }
 
 .titulo .tit h1 {
-    color:whitesmoke;
+    margin-top:9vw;
+    color: whitesmoke;
     text-decoration: underline white;
     animation-duration: 2s;
 }
@@ -121,6 +124,7 @@ a:link {
     font-family: 'Amatic SC', cursive;
     text-shadow: 2px -3px 9px black;
 }
+
 .cabecera h4 {
     padding: 6px;
     margin: 18px;
@@ -133,7 +137,7 @@ a:link {
 .titulo p {
     background-color: transparent;
     padding: 4px;
-    width:center;
+    width: center;
     font-style: normal;
     box-align: center;
     color: red;
@@ -147,79 +151,81 @@ a:link {
 /* DESDE ACÁ COMIENZA EL MAIN */
 
 
-.seca .titseca{
-    background-color:red;
-    width:100vw;
+.seca .titseca {
+    background-color: red;
+    width: 100vw;
     height: 4rem;
-    padding:4px;
+    padding: 4px;
     background: linear-gradient(rgb(241, 8, 8), white);
-    display:inline-flexbox;
-}
-.seca .titseca h2{
-    font-size:3rem;
-    text-align: center;
-    font-family:fantasy;
+    display: inline-flexbox;
 }
 
-.seca .subseca{
+.seca .titseca h2 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: fantasy;
+}
+
+.seca .subseca {
     background-color: yellow;
-    margin:3rem;
-    padding:2rem;
+    margin: 3rem;
+    padding: 2rem;
     font-size: 1.4rem;
 }
 
 /* DESDE ACÁ COMIENZAN LAS FOTOS Y ESO */
 
-.galeria{
-    width:100%;
-    text-align:center;
+.galeria {
+    width: 75rem;
+    text-align:initial;
     display: flex;
-    align-items: center;
+    align-items:initial;
     justify-content: center;
-    overflow:scroll;
-    margin:auto;
+    overflow: scroll;
+    margin: auto;
     border: 2px solid black;
-    
+
 }
 
-.imagen{
+.imagen {
     /* background-color: tomato; */
     background-color: #e5c2ff;
-    float:center;
-    width:20.5rem;
-    height:24rem;
-    /* border:2px solid black; */
+    float: center;
+    width: 20.5rem;
+    height: 24rem;
+    border:2px solid black;
+    margin:2px;
 }
 
-.imagen p{
-    background-color:red;
-    padding:4px;
+.imagen p {
+    background-color: red;
+    padding: 4px;
     font-size: 1.6rem;
 }
 
-.contenedorimg{
+.contenedorimg {
     /* background-color: black; */
-    overflow:hidden;
-    width:20rem;
+    overflow: hidden;
+    width: 20rem;
     height: 20rem;
     border-radius: 10rem;
-    float:left;
+    float: left;
 }
 
-.imagen img{
-    width:20rem;
+.imagen img {
+    width: 20rem;
     height: 20rem;
     border-radius: 10rem;
-    display:relative;
-    display:-moz-inline-grid; 
+    display: relative;
+    display: -moz-inline-grid;
 }
 
 
 .imagen img:hover {
-    -webkit-transform:scale(1.1);
-    transform:scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
-.contenedorimg:hover{
+.contenedorimg:hover {
     border: 4px solid rgb(92, 3, 3);
 }
