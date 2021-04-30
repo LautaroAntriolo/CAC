@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    text-align: center;
 }
 
 *p {
@@ -12,79 +11,63 @@
 }
 
 body {
-    background-color: #fff;
-    width: 100vw;
-    height: 100vh;
+    background-color: rgb(251, 253, 94);
+    /* height: 100vh; */
 }
 
-header {
-    width: 100vh;
-    position: fixed;
-    position: absolute;
+.header {
+    background-color: red;
+    /* display:flex; */
+    /* justify-content:center; */
+    /* align-items: stretch; */
 }
 
-/* ESTA IMG ES EL LOGOTIPO */
+.divmenu {
+    background-color: tomato;
+}
+
 .nav0 {
     background: linear-gradient(to bottom, blue, white);
     width: 6.3rem;
     height: 6rem;
-    border-radius: 0.6rem;
     display: inline-flexbox;
-    float:left;
+    float: left;
 }
 
 .nav0 img {
     width: 6rem;
     height: 6rem;
-    border-radius: 3rem;
-    display: inline-flexbox;
     margin-left: 3rem;
     margin-right: 3rem;
     background: linear-gradient(to bottom, blue, white);
     transition: all 300ms ease 0ms;
-    z-index: 10;
-    float:left;
-
 }
 
-.nav{
-    float:left;
-    width: 9rem;
-    margin-left:50px;
-    margin-top:9px;
-    
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: last baseline;
 }
+
 .nav ul {
     list-style-type: none;
-    text-align: center;
     font-size: 2rem;
-    overflow: hidden;
-    background-color:transparent;
-    position: -webkit-sticky;
-    position: fixed;
-    position: sticky;
-    height: 7.8vh;
-    width: 100vw;
-    z-index: 1;
+    background-color: pink;
+    display: flex;
+    margin-left: 50px;
 }
 
 .nav ul li {
-    float: left;
+    flex: 1 0 auto;
     background-color: transparent;
+    margin: 3px;
 }
 
 nav ul li a {
-    color:white;
-    padding: 14px 16px;
+    color: red;
     text-decoration: none;
+    margin: 1rem;
 }
-
-.nav ul li a {
-    display: center;
-    font-size: 1.7rem;
-    text-decoration: none;
-}
-
 
 .nav0 img:hover {
     background: linear-gradient(to bottom, red, orange);
@@ -93,7 +76,7 @@ nav ul li a {
 }
 
 .nav ul a:hover {
-    background-color: rgb(206, 7, 7);
+    background-color: rgb(10, 7, 206);
 }
 
 a:visited,
@@ -103,129 +86,156 @@ a:link {
 }
 
 /* ARRANCA LA CABECERA */
+.onda {
+    background-color: blue;
+}
 
 .cabecera {
-    width: 100vw;
-    background: linear-gradient(rgb(0, 0, 0), white);
-    border: solid black;
+    /* background: linear-gradient(to bottom, rgb(0, 0, 0), white); */
+    background-color: rgb(235, 220, 236);
+    margin: 0 auto;
+}
+
+
+@media screen and (min-width: 100em) {
+    .cabecera {
+        max-width: 100em;
+    }
+}
+
+.titysub {
+    background-color: transparent;
 }
 
 .titulo .tit h1 {
-    margin-top:9vw;
+    width: auto;
     color: whitesmoke;
     text-decoration: underline white;
     animation-duration: 2s;
-}
-
-
-.titulo h1 {
     margin-top: 8vw;
     font-size: 9rem;
     font-family: 'Amatic SC', cursive;
     text-shadow: 2px -3px 9px black;
-}
-
-.cabecera h4 {
-    padding: 6px;
-    margin: 18px;
-    font-size: 2rem;
     text-align: center;
-    text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 
-
-.titulo p {
+.titulo .titysub p {
     background-color: transparent;
     padding: 4px;
     width: center;
     font-style: normal;
     box-align: center;
     color: red;
-    font-size: 23px;
+    font-size: 2.6rem;
     font-family: 'Amatic SC', cursive;
     animation-duration: 3s;
     --animate-delay: 0.9s;
 }
 
+.subtitulo {
+    background-color: tomato;
+    margin: 4rem;
+    display: flex;
+}
+
+.subtitulo h4 {
+    width: auto;
+    padding: 6px;
+    margin: 18px;
+    font-size: 2rem;
+}
 
 /* DESDE ACÁ COMIENZA EL MAIN */
 
 
-.seca .titseca {
-    background-color: red;
-    width: 100vw;
-    height: 4rem;
-    padding: 4px;
-    background: linear-gradient(rgb(241, 8, 8), white);
-    display: inline-flexbox;
-}
-
 .seca .titseca h2 {
-    font-size: 3rem;
+    /* font-size: 3rem; */
     text-align: center;
     font-family: fantasy;
+    background: linear-gradient(rgb(240, 10, 10), rgb(78, 6, 6));
 }
 
 .seca .subseca {
     background-color: yellow;
-    margin: 3rem;
+    /* margin: 1rem; */
     padding: 2rem;
     font-size: 1.4rem;
 }
 
 /* DESDE ACÁ COMIENZAN LAS FOTOS Y ESO */
 
-.galeria {
-    width: 75rem;
-    text-align:initial;
+.allimg {
+    /*el centrado van a ser todas las fotos*/
+    margin: 0 auto;
+    padding: 0 em;
+    background-color: aqua;
+    overflow-y: scroll;
+}
+
+@media screen and (min-width: 90em) {
+    .allimg {
+        max-width: 90em;
+    }
+}
+
+.titseca {
+    margin: 0 0 1em;
+    padding: 1em 0;
+    font-size: 2em;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+}
+
+.mazo {
     display: flex;
-    align-items:initial;
-    justify-content: center;
-    overflow: scroll;
-    margin: auto;
-    border: 2px solid black;
-
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    overflow-x: scroll;
 }
 
-.imagen {
-    /* background-color: tomato; */
-    background-color: #e5c2ff;
-    float: center;
-    width: 20.5rem;
-    height: 24rem;
-    border:2px solid black;
-    margin:2px;
+.tarjeta {
+    background: transparent;
+    margin-bottom: 2em;
+    width: auto;
+    margin: 3px;
 }
 
-.imagen p {
-    background-color: red;
-    padding: 4px;
-    font-size: 1.6rem;
+.tarjeta .titimg {
+    color: black;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+
+.tarjeta-content p {
+    color: red;
+    font-size: 95%;
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-weight: normal;
 }
 
 .contenedorimg {
-    /* background-color: black; */
+    margin: auto;
+    width: 17.6rem;
+    height: 17.6rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
     overflow: hidden;
-    width: 20rem;
-    height: 20rem;
-    border-radius: 10rem;
-    float: left;
 }
 
-.imagen img {
-    width: 20rem;
-    height: 20rem;
-    border-radius: 10rem;
-    display: relative;
-    display: -moz-inline-grid;
-}
+img {
+    border: 2px solid grey;
+    width: 17.6rem;
+    height: 17.6rem;
+    border-radius: 50%;
 
+}
 
 .imagen img:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-}
-
-.contenedorimg:hover {
-    border: 4px solid rgb(92, 3, 3);
 }
