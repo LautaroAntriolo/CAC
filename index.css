@@ -12,7 +12,6 @@
 
 body {
     background-color: white;
-    /* height: 100vh; */
     display: flex;
     flex-direction: column;
 }
@@ -23,7 +22,7 @@ body {
     }
 }
 
-.header {
+.container {
     width: 100%;
 }
 
@@ -33,13 +32,13 @@ body {
 }
 
 .nav0 {
-    background: linear-gradient(to bottom, blue, white);
+    /* background: linear-gradient(to bottom, blue, white); */
     width: 6rem;
     height: 6rem;
     margin-left: 3rem;
     margin-right: 3rem;
     display: inline-flexbox;
-    float: left;
+    float:right;
     border-radius: 50%;
 }
 
@@ -47,18 +46,16 @@ body {
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
-    /* margin-left: 3rem;
-    margin-right: 3rem; */
     background: linear-gradient(to bottom, blue, white);
     transition: all 300ms ease 0ms;
     position: absolute;
     z-index: 3;
-    /* position:fixed; */
+    position:fixed;
 }
 
 .nav {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: last baseline;
 }
 
@@ -100,16 +97,20 @@ a:link {
 }
 
 /* ARRANCA LA CABECERA */
-.onda {
-    background-color: rgb(156, 156, 253);
+.container {
+    /* background-color: rgb(156, 156, 253); */
+    background: linear-gradient(to bottom,black,white);
     display: flex;
-    margin: -50px auto;
+    /* margin: -50px auto; */
+    text-align:center;
+    justify-content: center;
 
 }
 
 .cabecera {
-    background: linear-gradient(to bottom, rgb(0, 0, 0), white);
+    background: linear-gradient(to bottom,white, black);
     margin: 0 auto;
+    display:flex;
     z-index: 1;
     justify-content: center;
 }
@@ -122,7 +123,8 @@ a:link {
 }
 
 .titysub {
-    background-color: transparent;
+    /* background-color: red; */
+    margin-left: 40px;
 }
 
 .titulo .tit h1 {
@@ -151,14 +153,13 @@ a:link {
 
 .subtitulo {
     background-color: transparent;
-    margin: 4rem;
+    padding: 3rem;
     display: flex;
+    box-align: center;
 }
 
 .subtitulo h4 {
     width: auto;
-    padding: 5px;
-    margin: 1px;
     font-size: 2rem;
 }
 
@@ -180,7 +181,8 @@ a:link {
 
 .titseca {
     font-size: 2em;
-    text-align: center;
+    text-align:center;
+    justify-content: center;
     color: rgb(201, 255, 201);
     text-shadow: 2px -3px 9px black;
 }
@@ -188,7 +190,7 @@ a:link {
 .seca .titseca h2 {
     margin-top: 50px;
     font-family: fantasy;
-    /* justify-content:center; */
+    /* justify-content:start; */
     background-color: rgb(71, 112, 150);
 }
 
@@ -209,7 +211,7 @@ a:link {
     background-color: red;
     overflow-x: scroll;
     overflow-y: scroll;
-    width: auto;
+    /* width: auto; */
     display: flex;
 }
 
@@ -226,9 +228,12 @@ a:link {
 
 .mazo .imagen {
     background-color: chocolate;
+    width: auto;
     margin: 3px;
-    display: inline-flex;
     padding: 2px;
+    display:flex;
+    text-align:center;
+    justify-content: center;
 }
 
 .mazo .contenedorimg {
@@ -236,14 +241,16 @@ a:link {
     margin: 3px;
     display: inline-flex;
     padding: 2px;
+    width: max-content;
 }
 
 .contenedorimg img{
     background-color: grey;
     margin: 3px;
-    display: inline-flex;
     padding: 2px;
-    width: 15rem;
     height: 15rem;
-    border-radius: 50%;
+}
+.imagen .teximg{
+    color: red;
+    display:inline-flex;
 }
