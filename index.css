@@ -110,9 +110,10 @@ a:link {
 .cabecera {
     background: linear-gradient(to bottom,white, black);
     margin: 0 auto;
-    display:flex;
+    display:inline-block;
     z-index: 1;
-    justify-content: center;
+    padding: 0;
+
 }
 
 
