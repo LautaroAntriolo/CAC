@@ -22,21 +22,19 @@ body {
     }
 }
 
-.container {
-    width: 100%;
-}
 
 .divmenu {
-    background: linear-gradient(to bottom, blue, white);
+    background: linear-gradient(to bottom, white,white);
+    margin-left:10rem;
 
 }
 
 .nav0 {
-    /* background: linear-gradient(to bottom, blue, white); */
     width: 6rem;
     height: 6rem;
     margin-left: 3rem;
     margin-right: 3rem;
+    margin-top:3rem;
     display: inline-flexbox;
     float:right;
     border-radius: 50%;
@@ -83,11 +81,12 @@ nav ul li a {
     background: linear-gradient(to bottom, red, orange);
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
+    border:2px solid brown;
 }
 
 .nav ul a:hover {
-    background: linear-gradient(to bottom, rgb(0, 0, 222), rgb(212, 206, 206));
-    box-shadow: 3 3;
+    background-color: rgb(243, 242, 242);
+    box-shadow: 2px 2px 10px 2px;
 }
 
 a:visited,
@@ -99,16 +98,19 @@ a:link {
 /* ARRANCA LA CABECERA */
 .container {
     /* background-color: rgb(156, 156, 253); */
-    background: linear-gradient(to bottom,black,white);
+    /* background: linear-gradient(to bottom,black,white); */
+    background-color:white;
     display: flex;
     /* margin: -50px auto; */
     text-align:center;
     justify-content: center;
-
+    margin:0 auto;
+    padding:0;
 }
 
 .cabecera {
-    background: linear-gradient(to bottom,white, black);
+    background: linear-gradient(to bottom,white, rgb(90, 83, 83));
+    /* background-color: grey; */
     margin: 0 auto;
     display:inline-block;
     z-index: 1;
