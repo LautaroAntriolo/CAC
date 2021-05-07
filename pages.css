@@ -1,0 +1,13 @@
+main{
+    text-align:center;
+    justify-content:center;
+    position: center;
+    column-count: 3;
+    column-width: 400px;
+    column-gap:12px;
+}
+img{
+    width:100%;
+    max-width: 100%;
+    margin-bottom:12px;
+}
