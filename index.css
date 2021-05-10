@@ -63,6 +63,11 @@ body {
     background-size: cover;
     opacity: 0.8;
 }
+@media screen and (min-width: 100em) {
+    .fondo{
+        max-width: 100em;
+    }
+}
 
 .titulo .tit h1 {
     display: flex;
@@ -132,6 +137,11 @@ body {
     text-align: center;
 }
 
+@media screen and (min-width: 100em) {
+    .main {
+        max-width: 100em;
+    }
+}
 main {
     padding: 9px;
     text-align: center;
