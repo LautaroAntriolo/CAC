@@ -6,6 +6,20 @@ main{
     column-width: 400px;
     column-gap:12px;
 }
+header h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+    color:#d9755b;
+    font-size: 5rem;
+    font-family: 'Amatic SC', cursive;
+}
+header p{
+    text-align: center;
+    font-size: 1.5rem;
+    color:rgb(110, 105, 105);
+}
 img{
     width:100%;
     max-width: 100%;

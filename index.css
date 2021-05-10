@@ -11,10 +11,11 @@
 }
 
 body {
-    background-color: white;
+    background-color: #edd2c7;
     display: flex;
     flex-direction: column;
 }
+
 @media screen and (max-width: 780px) and (oriantation: landscape) {
     body {
         display: none;
@@ -28,94 +29,24 @@ body {
 }
 
 
-.divmenu {
-    background: linear-gradient(to bottom, white,white);
-}
-
-.nav0 {
-    width: 6rem;
-    height: 6rem;
-    margin-top:1.5rem;
-    display:inline-flexbox;
-    float:left;
-    border-radius: 50%;
-}
-
-.nav0 img {
-    width: 6rem;
-    height: 6rem;
-    border-radius: 50%;
-    background: linear-gradient(to bottom, rgb(61, 61, 175), white);
-    transition: all 300ms ease 0ms;
-    /* position: absolute; */
-    z-index: 3;
-    position:fixed;
-}
-
-.nav {
-    display: flex;
-    flex-wrap: nowrap;
-    /* justify-content: last baseline; */
-}
-
-.nav ul {
-    list-style-type: none;
-    font-size: 2rem;
-    background-color: transparent;
-    display: flex;
-    margin-left: 50px;
-}
-
-.nav ul li {
-    flex: 1 0 auto;
-    background-color: transparent;
-    margin: 3px;
-}
-
-nav ul li a {
-    color: black;
-    text-decoration: none;
-    margin: 0.6rem;
-    border-radius: 9px;
-}
-
-.nav0 img:hover {
-    background: linear-gradient(to bottom, rgb(168, 48, 48), rgb(189, 179, 160));
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-    border:2px solid brown;
-}
-
-.nav ul a:hover {
-    background-color: rgb(255, 240, 240);
-    
-}
-
-a:visited,
-a:link,
-a:link {
-    text-decoration: none;
-}
-
 /* ARRANCA LA CABECERA */
 .container {
-    background-color:white;
+    background-color: transparent;
     display: flex;
-    text-align:center;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    margin:0 auto;
-    padding:0;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .cabecera {
-    background: linear-gradient(to bottom,white,white);
-    /* background-color: grey; */
+    background: transparent;
     margin: 0 auto;
-    display:inline-block;
+    display: inline-block;
     z-index: 1;
     padding: 0;
-
+    margin-top: 3rem;
 }
 
 
@@ -125,26 +56,31 @@ a:link {
     }
 }
 
+.fondo {
+    background-color: #edd2c7;
+    background-image: url("img/parafondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
 
 .titulo .tit h1 {
-    width: auto;
-    color: whitesmoke;
-    text-decoration: underline white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2.5rem;
+    color: #d9755b;
     animation-duration: 2s;
     font-size: 9rem;
     font-family: 'Amatic SC', cursive;
-    text-shadow: 2px -3px 9px black;
-    text-align: center;
 }
 
 .titulo .titysub p {
     background-color: transparent;
-    padding: 4px;
-    width: center;
+    padding: 1px;
     font-style: normal;
-    /* box-align: center; */
-    color: red;
-    font-size: 2.6rem;
+    color: #b47235;
+    font-size: 1.6rem;
     font-family: 'Amatic SC', cursive;
     animation-duration: 3s;
     --animate-delay: 0.9s;
@@ -152,14 +88,13 @@ a:link {
 
 .subtitulo {
     background-color: transparent;
-    padding: 3rem;
+    padding: 1rem;
     display: flex;
-    /* box-align: center; */
 }
 
 .subtitulo h4 {
-    width: auto;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color: rgb(110, 105, 105);
 }
 
 /* DESDE ACÁ COMIENZA EL MAIN */
@@ -173,39 +108,42 @@ a:link {
 
 .titseca {
     font-size: 2em;
-    text-align:center;
+    text-align: center;
     justify-content: center;
-    color:whitesmoke;
-    text-shadow: 2px 3px 4px black;
 }
 
 .seca .titseca h2 {
     margin-top: 50px;
     font-family: fantasy;
-    text-align:center;
-    justify-content: center;
-    justify-content:start;
+    color: #b9a7a5;
+    text-shadow: 2px 3px 4px black;
+    font-size: 4rem;
+    opacity: 0.7;
 }
 
 .seca .subseca {
-    background: linear-gradient(to bottom, rgb(232, 244, 255), white);
-    text-align: center;
-    padding: 2rem;
-    font-size: 1.4rem;
+    background: linear-gradient(to bottom, #edd2c7, white);
+    padding: 1.5rem;
 }
-main{
-    padding:9px;
-    text-align:center;
-    justify-content:center;
+
+.seca .subseca p {
+    font-size: 1.5rem;
+    color: rgb(110, 105, 105);
+    text-align: center;
+}
+
+main {
+    padding: 9px;
+    text-align: center;
+    justify-content: center;
     position: center;
     column-count: 2;
     column-width: 400px;
-    column-gap:12px;
+    column-gap: 12px;
 }
 
-img{
-    width:100%;
+img {
+    width: 100%;
     max-width: 100%;
-    margin-bottom:12px;
+    margin-bottom: 12px;
 }
-
