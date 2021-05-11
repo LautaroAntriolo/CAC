@@ -18,15 +18,18 @@ article h1 {
     justify-content: center;
     text-align: center;
     padding-top: 4rem;
-    color: #d9755b;
+    color: #de8971;
     font-size: 5rem;
     font-family: 'Amatic SC', cursive;
 }
 
 article p {
+    display:flex;
     text-align: center;
     font-size: 1.5rem;
     color: rgb(110, 105, 105);
+    justify-content: center;
+    max-width: 100rem;
 }
 
 img {
@@ -39,7 +42,7 @@ img {
     position: relative;
     display: inline-block;
     text-align: center;
-    background-color:#edd2c7;
+    background-color:#ffe9d6;
     margin: 4px;
 }
 
