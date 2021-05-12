@@ -97,7 +97,17 @@ body {
     color: rgb(110, 105, 105);
 }
 
-@media screen and (max-width:80em) {
+.btnrespon{
+    width: 3rem;
+    height: 3rem;
+    display:none;
+}
+.btnrespon i{
+    color: #de8971;
+    font-size: 2rem;
+}
+
+@media screen and (max-width:60em) {
     .fondo {
         background-image: url("img/fondoresponsive2.png");
     }
@@ -112,8 +122,20 @@ body {
         font-size: 5rem;
         font-family: 'Amatic SC', Arial, Helvetica, sans-serif;
     }
+    .btnrespon{
+        display:flex;
+        border:none;
+        background-color: transparent;
+    }
+    .btnrespon i{
+        color: #de8971;
+        font-size: 2.5rem;
+        position:center;
+    }
+    .desaparece{
+        display:none;
+    }
 }
-
 
 /* DESDE ACÁ COMIENZA EL MAIN */
 /* DESDE ACÁ COMIENZAN LAS FOTOS Y ESO */
@@ -233,3 +255,35 @@ form {
       grid-column: 2 / 3;
     }
   }
+
+
+@media screen and (min-width: 25rem) {
+    .desaparece {
+        display: flex;
+        list-style-type: none;
+    }    
+}
+
+@media screen and (max-width: 62.5rem) {
+    .desaparece{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 46.9rem) {
+
+    .desaparece {
+        display: none;
+    }
+    .btnrespon {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 40rem) {
+
+    .desaparece {
+        display: none;
+        list-style-type: none;
+    }
+}
