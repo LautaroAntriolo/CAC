@@ -127,24 +127,28 @@ body {
         border:none;
         background-color: transparent;
     }
-    .btnrespon i{
-        color: #de8971;
-        font-size: 2.5rem;
-        position:center;
-    }
-    .desaparece{
+    .replay{
         display:none;
     }
 }
 
-/* DESDE ACÁ COMIENZA EL MAIN */
-/* DESDE ACÁ COMIENZAN LAS FOTOS Y ESO */
 @media screen and (min-width: 50em) {
     .allimg {
         max-width: 50em;
     }
 }
-
+.replay {
+    position: fixed;
+    bottom: 3rem;
+    font-size:3rem;
+    right: 17px;
+    z-index: 1 !important;
+    border: none;
+    background-color: transparent;
+}
+.replay i{
+    color: #de8971;
+}
 
 .titseca {
     font-size: 2em;
@@ -157,7 +161,7 @@ body {
     font-family: fantasy,Arial, Helvetica, sans-serif;
     color:#7b6079 ;
     text-shadow: 2px 3px 4px black;
-    font-size: 4rem;
+    font-size: 3.5rem;
     opacity: 0.7;
 }
 
@@ -199,7 +203,16 @@ img {
     margin-bottom: 12px;
     border-radius:9px;
 }
+
+.settingimg{
+    width:6rem;
+    height:6rem;
+}
 /* DESDE ACA COMIENZA EL FORMULARIO */
+footer{
+    max-width: 1170px;
+    background: linear-gradient(to bottom,rgb(157, 155, 155,0.8),rgb(157, 155, 155,0.6),rgb(157, 155, 155,0.4));
+}
 .contactanos{
     justify-content: center;
     text-align: center;
@@ -240,6 +253,20 @@ form {
       opacity: 1;
   }
 
+.contactos{
+    background: linear-gradient(to bottom, #ffe9d6, white);
+    margin:1rem;
+}
+.contactos img{
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-size:cover;
+    margin:5px 10px 5px 10px;
+}
+
+
   @media (min-width: 400px) {
     form {
       grid-template-columns: 0.4fr 1.6fr;
@@ -269,7 +296,6 @@ form {
         display: flex;
     }
 }
-
 @media screen and (max-width: 46.9rem) {
 
     .desaparece {

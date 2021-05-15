@@ -7,89 +7,147 @@
 body {
     box-sizing: border-box;
 }
-
-header {
-    background-color: rgba(99, 96, 95, 0.34);
-    height: 3rem;
+.barrasup{
+    display:flex;
+    position:relative;
+    margin-top: -23rem;
 }
-
+header {
+    background-color: rgb(190, 190, 190,0.3);
+}
 
 #menuA {
     display: flex;
     position: relative;
     font-family: verdana, arial;
     min-width: 200px;
-    z-index: 4;
-    
+    z-index:0;
 }
-.caja2{
-    width:2rem;
-    height:2rem;
-    float: right;
-}
+
 .showhim {
-    background-color:transparent;
+    background-color: transparent;
     float: left;
 }
 
+.caja2 {
+    width: 3rem;
+    height: 3rem;
+    float: right;
+}
+
+.caja2 button {
+    border: none;
+    background-color: transparent;
+}
+
+.caja2 i {
+    width: 3rem;
+    font-size: 2.5rem;
+    color: rgb(222, 137, 113);
+    margin: 0.3rem 0rem 0 1rem;
+}
 
 .showme {
-    /* Capa emergente */
+    background-color: rgb(222, 137, 113, 0.7);
     position: absolute;
-    margin: -1rem 0rem 0rem 1rem;
-    padding: 0.5rem 1.5rem 0.5rem 0.3rem;
-    width: 12rem;
+    margin: 3rem 0rem 0rem 1rem;
+    padding: 0.5rem .5rem 0.5rem 0.3rem;
+    width: auto;
     display: none;
     text-align: left;
     line-height: 2.5rem;
     border-radius: 5px;
     list-style-type: none;
 }
-.showmes{
-    margin: 0rem 0rem 0rem 0rem;
-    margin-left:7rem;
-    position: absolute;
-    display: none;
-    text-align: center;
+.showme li {
+    text-align: left;
+    margin: 3px 0rem 0rem 0rem;
+    padding-left:3px;
     line-height: 2rem;
-    border-radius: 5px;
-    list-style-type: none;
+    border-color:rgba(179, 79, 3, 0.8);
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
 }
-.showmes li{
-    background-color: rgba(168, 157, 157, 0.6);
-    padding:4px;
-    margin: 3px 1.9rem 0rem 0rem;
-    border-radius: 0px 9px 9px 20px;
-    line-height: 2rem;
-    border: 1px solid rgba(179, 79, 3, 0.34);
-    font-size: 1rem;
+.showme a {
+    text-decoration: none;
+    color: rgba(179, 79, 3,0.9);
+    font-size: 1.2rem;
+    font-family: fantasy;
+    
 }
 
 .elivi {
     list-style-type: none;
     float: left;
-    margin-top: 0.5rem;
-    position:absolute;
-    font-size:1rem;
+    margin-top: 1rem;
+    position: absolute;
     font-family: fantasy;
 }
 
-
-.fac {
-    display: inline;
-    padding: 0rem 0.7rem 0rem 0.7rem;
-    line-height: 1.8rem;
-}
-
-
-nav a {
-    padding: 2px 5px 5px 5px;
+.elivi a {
     text-decoration: none;
-    /* color: #000000; */
-    color:rgba(24, 0, 0, 0.6);
-    /* No visitado */
-    background: transparent;
+    color: rgb(222, 137, 113);
 }
+.fac {
+    margin:0rem 1rem 0 0rem;
+    background-color: transparent;
+    padding: 5px;
+    stroke-width: 2.5rem;
+    font-size: 1.3rem;
+    display: inline;
+}
+
+
+.showmes,
+.showmes1,
+.showmes2 {
+    position: absolute;
+    padding: 0rem 0rem 0rem 0rem;
+    list-style-type: none;
+    width: auto;
+    display: none;
+    text-align: left;
+    /* line-height: 2.5rem; */
+    border-radius: 5px;
+    background-color: rgba(241, 207, 198, 0.7);
+}
+.showmes{
+    margin: 0rem 0rem 0rem 5rem;
+}
+.showmes1{
+    margin: 0rem 0rem 0rem 12.8rem;
+}
+.showmes2{
+    margin: 0rem 0rem 0rem 20rem;
+}
+.showmes li {
+    text-align: left;
+    /* margin: 3px 0rem 0rem 0rem; */
+    padding-left:3px;
+    /* line-height: 2rem; */
+    border-color:rgba(179, 79, 3, 0.7);
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+}
+.showmes1 li {
+    text-align: left;
+    /* margin: 3px 0rem 0rem 0rem; */
+    padding-left:3px;
+    /* line-height: 2rem; */
+    border-color:rgba(179, 79, 3, 0.7);
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+}
+.showmes2 li {
+    text-align: left;
+    /* margin: 3px 0rem 0rem 0rem; */
+    padding-left:3px;
+    /* line-height: 2rem; */
+    border-color:rgba(179, 79, 3, 0.7);
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+}
+
 
 nav a.visited {
     text-decoration: none;
@@ -98,20 +156,31 @@ nav a.visited {
 
 nav a.active {
     text-decoration: none;
-    color: white;
-    opacity: .5;
+    color:rgba(119, 54, 4, 0.7);
     /* Ultimo visitado */
 }
 
 nav a:hover {
     text-decoration: none;
-    color: #FFFFFF;
-}
+    color:rgba(179, 79, 3, 0.7);
 
+}
+.fla li:hover{
+    background-color:rgba(179, 79, 3, 0.4);
+    transition: background-color, 0.3s;
+
+}
 .showhim:hover .showme {
     display: block;
 }
+
 .facfo:hover .showmes {
+    display: block;
+}
+.facfo1:hover .showmes1 {
+    display: block;
+}
+.facfo2:hover .showmes2 {
     display: block;
 }
 /* ---------------------------------------------------------- */
@@ -124,7 +193,6 @@ nav a:hover {
 }
 
 @media screen and (max-width: 1000px) {
-
     #menuA {
         display: none;
     }
