@@ -49,6 +49,15 @@ body {
     margin-top: 3rem;
 }
 
+/* .fondo {
+    background-color: #ffe9d6;
+    background-image: url("img/parafondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    z-index:0;
+} */
+
 
 @media screen and (min-width: 100em) {
     .cabecera {
@@ -62,18 +71,12 @@ body {
     text-align: center;
     margin-top: 2.5rem;
     color: #de8971;
-    animation-duration: 2s;
+    animation-duration: 3s;
     font-size: 9rem;
     font-family: 'Amatic SC', cursive;
 }
 
-.fondo {
-    background-color: #ffe9d6;
-    background-image: url("img/parafondo.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.8;
-}
+
 
 .titulo .titysub p {
     background-color: transparent;
@@ -81,7 +84,7 @@ body {
     font-style: normal;
     color: red;
     font-size: 1.6rem;
-    font-family: 'Amatic SC',Arial, Helvetica, sans-serif;
+    font-family: 'Amatic SC', Arial, Helvetica, sans-serif;
     animation-duration: 3s;
     --animate-delay: 0.9s;
 }
@@ -97,12 +100,13 @@ body {
     color: rgb(110, 105, 105);
 }
 
-.btnrespon{
+.btnrespon {
     width: 3rem;
     height: 3rem;
-    display:none;
+    display: none;
 }
-.btnrespon i{
+
+.btnrespon i {
     color: #de8971;
     font-size: 2rem;
 }
@@ -122,13 +126,15 @@ body {
         font-size: 5rem;
         font-family: 'Amatic SC', Arial, Helvetica, sans-serif;
     }
-    .btnrespon{
-        display:flex;
-        border:none;
+
+    .btnrespon {
+        display: flex;
+        border: none;
         background-color: transparent;
     }
-    .replay{
-        display:none;
+
+    .replay {
+        display: none;
     }
 }
 
@@ -137,16 +143,18 @@ body {
         max-width: 50em;
     }
 }
+
 .replay {
     position: fixed;
     bottom: 3rem;
-    font-size:3rem;
+    font-size: 3rem;
     right: 17px;
     z-index: 1 !important;
     border: none;
     background-color: transparent;
 }
-.replay i{
+
+.replay i {
     color: #de8971;
 }
 
@@ -158,8 +166,8 @@ body {
 
 .seca .titseca h2 {
     margin-top: 50px;
-    font-family: fantasy,Arial, Helvetica, sans-serif;
-    color:#7b6079 ;
+    font-family: fantasy, Arial, Helvetica, sans-serif;
+    color: #7b6079;
     text-shadow: 2px 3px 4px black;
     font-size: 3.5rem;
     opacity: 0.7;
@@ -175,8 +183,9 @@ body {
     color: rgb(110, 105, 105);
     text-align: center;
 }
-.titmazo h3{
-    color:#7b6079;
+
+.titmazo h3 {
+    color: #7b6079;
     font-size: 2rem;
     opacity: 0.5;
 }
@@ -201,22 +210,30 @@ img {
     width: 100%;
     max-width: 100%;
     margin-bottom: 12px;
-    border-radius:9px;
+    border-radius: 7px;
 }
 
-.settingimg{
-    width:6rem;
-    height:6rem;
+main a:hover img {
+    box-shadow: 0.55em 0.25em 0.75em 0.05em rgba(0, 0, 0, 0.5),
+        0.125em 0.125em 0.225em 0.05em rgba(10, 10, 10, 0.9);
 }
+
+.settingimg {
+    width: 6rem;
+    height: 6rem;
+}
+
 /* DESDE ACA COMIENZA EL FORMULARIO */
-footer{
+footer {
     max-width: 1170px;
-    background: linear-gradient(to bottom,rgb(157, 155, 155,0.8),rgb(157, 155, 155,0.6),rgb(157, 155, 155,0.4));
+    background: linear-gradient(to bottom, rgb(157, 155, 155, 0.8), rgb(157, 155, 155, 0.6), rgb(157, 155, 155, 0.4));
 }
-.contactanos{
+
+.contactanos {
     justify-content: center;
     text-align: center;
     color: rgb(110, 105, 105);
+    border: 2px solid #7b6079;
 }
 
 form {
@@ -228,79 +245,96 @@ form {
     padding: 1em;
     border-radius: 8px;
     opacity: 0.8;
-  }
-  form input, select, textarea {
+    font-size: 1rem;
+}
+
+form input,
+select,
+textarea {
     background: #faf3f3;
     border: 1px solid #9c9c9c;
     opacity: 0.5;
     border-radius: 8px;
-  }
-  
-  label {
+}
+
+label {
     padding: 0.5em 0.5em 0.5em 0;
     color: rgb(110, 105, 105);
-    
-  }
-  
-  input {
+
+}
+
+input {
     padding: 0.7em;
     margin-bottom: 0.5rem;
     border-radius: 5px;
-  }
-  
-  .final:hover{
-      background-color:#a7d0cd;
-      opacity: 1;
-  }
-
-.contactos{
-    background: linear-gradient(to bottom, #ffe9d6, white);
-    margin:1rem;
 }
-.contactos img{
+
+.final:hover {
+    background-color: #a7d0cd;
+    opacity: 1;
+    box-shadow: 0.65em 0.25em 0.75em 0.05em rgba(0, 0, 0, 0.5),
+        0.125em 0.125em 0.25em 0.05em rgba(10, 10, 10, 0.9);
+    color: rgb(0, 0, 0, 1)
+}
+
+.contactos {
+    background: linear-gradient(to bottom, #ffe9d6, white);
+    margin: 1rem;
+}
+
+.contactos img {
     width: 5.5rem;
     height: 5.5rem;
     border-radius: 50%;
-    border: 2px solid black;
-    background-size:cover;
-    margin:5px 10px 5px 10px;
+    border: 2.5px solid #7b6079;
+    background-size: cover;
+    margin: 5px 10px 5px 10px;
+}
+
+.contactos .redirect img:hover {
+    border: 3px solid #7c4f79;
+    box-shadow: 0.65em 0.25em 0.75em 0.05em rgba(0, 0, 0, 0.5),
+        0.125em 0.125em 0.125em 0.05em rgba(10, 10, 10, 0.9);
+
 }
 
 
-  @media (min-width: 400px) {
+@media (min-width: 400px) {
     form {
-      grid-template-columns: 0.4fr 1.6fr;
-      grid-gap: 8px;
-    }
-  
-    label {
-      text-align: right;
-      grid-column: 1 / 2;
+        grid-template-columns: 0.4fr 1.6fr;
+        grid-gap: 8px;
     }
 
-    input{
-      grid-column: 2 / 3;
+    label {
+        text-align: right;
+        grid-column: 1 / 2;
     }
-  }
+
+    input {
+        grid-column: 2 / 3;
+    }
+}
 
 
 @media screen and (min-width: 25rem) {
     .desaparece {
         display: flex;
         list-style-type: none;
-    }    
+    }
 }
 
 @media screen and (max-width: 62.5rem) {
-    .desaparece{
+    .desaparece {
         display: flex;
     }
 }
+
 @media screen and (max-width: 46.9rem) {
 
     .desaparece {
         display: none;
     }
+
     .btnrespon {
         display: flex;
     }
@@ -311,5 +345,161 @@ form {
     .desaparece {
         display: none;
         list-style-type: none;
+    }
+}
+/* ############################################## */
+/* Comienza la pagina generica para cada articulo */
+/* ############################################## */
+.grid-1 {
+    background-color: transparent;
+    display: grid;
+    width: 100%;
+    max-width: 1090px;
+    margin: 4rem auto;
+    height: 60rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 180px auto 80px;
+    grid-gap: 20px;
+    color: rgb(110, 105, 105);
+
+    grid-template-areas: "tit    tit       tit"
+        "main   main     sidebar"
+        "footer footer   footer";
+}
+
+/* items */
+
+.grid-1 div {
+    color:white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+/* specific item styles */
+
+.item-1 {
+    background-color:transparent;
+    grid-area: tit;
+}
+.item-1 h1,h2{
+    color: #de8971;
+}
+
+.item-2 {
+    background: linear-gradient(to bottom, rgb(157, 155, 155, 0.8), rgb(157, 155, 155, 0.6), rgb(157, 155, 155, 0.4));
+    border:1px solid rgb(157, 155, 155, 0.8);
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 5fr 30%;
+    grid-template-rows: 25rem;
+    grid-gap: 20px;
+
+    grid-template-areas:
+        "header header"
+        "article article"
+        "article1 article1"
+        "article2 article2"
+        "article3 article3";
+}
+.item-4 {
+    grid-area: footer;
+    background: linear-gradient(to bottom, rgb(157, 155, 155, 0.8), rgb(157, 155, 155, 0.6), rgb(157, 155, 155, 0.4));
+    height: 18rem;
+    border:1px solid rgb(157, 155, 155, 0.8);
+}
+
+.item-2,
+.item-3,
+.item-4, p,h3{
+    color: rgb(110, 105, 105);
+}
+
+.item-5 {
+    grid-area: header;
+    background: #ddc968;
+    background-image: url("img/Perros/GoldenRetriever.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 25rem;
+}
+
+.item-6 {
+    background: rgb(221, 201, 104, 0.6);
+    grid-area: article;
+    height: 32rem;
+    overflow-y: scroll;
+}
+
+
+.item-7 {
+    background: rgb(221, 201, 104, 0.6);
+    grid-area: article1;
+    height: 32rem;
+    overflow-y: scroll;
+}
+
+
+.item-8 {
+    background: rgb(221, 201, 104, 0.6);
+    grid-area: article2;
+    height: 32rem;
+    overflow-y: scroll;
+}
+.item-8 h2{
+    color: #7b6079;
+}
+
+.item-3 {
+    grid-area: sidebar;
+    background: linear-gradient(to bottom, rgb(157, 155, 155, 0.8), rgb(157, 155, 155, 0.6), rgb(157, 155, 155, 0.4));
+    border:1px solid rgb(157, 155, 155, 0.8);
+    display: grid;
+    grid-template-rows: 41rem 41rem 41rem;
+    grid-gap: 20px;
+
+    grid-template-areas:
+        "article9  article9"
+        "article10 article10"
+        "article11 article11";
+}
+
+.item-9 {
+    grid-area: article9;
+    background: #faf3f3;
+    overflow-y: scroll;
+
+}
+
+.item-10 {
+    grid-area: article10;
+    background: #faf3f3;
+    overflow-y: scroll;
+
+}
+
+.item-11 {
+    grid-area: article11;
+    background: #faf3f3;
+    overflow-y: scroll;
+
+}
+
+@media screen and (max-width: 62.5rem) {
+    .grid-1 {
+        display: grid;
+        width: 100%;
+        margin: 5rem auto;
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-gap: 5px;
+    
+        grid-template-areas:
+            "tit"
+            "article"
+            "main"
+            "sidebar"
+            "footer";
     }
 }
