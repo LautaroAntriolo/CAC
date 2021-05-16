@@ -16,20 +16,9 @@ body {
     flex-direction: column;
 }
 
-@media screen and (max-width: 780px) and (oriantation: landscape) {
-    body {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 100em) {
-    .container {
-        max-width: 100em;
-    }
-}
-
 
 /* ARRANCA LA CABECERA */
+
 .container {
     background-color: transparent;
     display: flex;
@@ -57,14 +46,6 @@ body {
     opacity: 0.8;
     z-index:0;
 } */
-
-
-@media screen and (min-width: 100em) {
-    .cabecera {
-        max-width: 100em;
-    }
-}
-
 .titulo .tit h1 {
     display: flex;
     justify-content: center;
@@ -75,9 +56,6 @@ body {
     font-size: 9rem;
     font-family: 'Amatic SC', cursive;
 }
-
-
-
 .titulo .titysub p {
     background-color: transparent;
     padding: 1px;
@@ -88,7 +66,6 @@ body {
     animation-duration: 3s;
     --animate-delay: 0.9s;
 }
-
 .subtitulo {
     background-color: transparent;
     padding: 1rem;
@@ -100,58 +77,15 @@ body {
     color: rgb(110, 105, 105);
 }
 
-.btnrespon {
-    width: 3rem;
-    height: 3rem;
-    display: none;
-}
-
-.btnrespon i {
-    color: #de8971;
-    font-size: 2rem;
-}
-
-@media screen and (max-width:60em) {
-    .fondo {
-        background-image: url("img/fondoresponsive2.png");
-    }
-
-    .titulo .tit h1 {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        margin-top: .5rem;
-        color: #de8971;
-        animation-duration: 2s;
-        font-size: 5rem;
-        font-family: 'Amatic SC', Arial, Helvetica, sans-serif;
-    }
-
-    .btnrespon {
-        display: flex;
-        border: none;
-        background-color: transparent;
-    }
-
-    .replay {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 50em) {
-    .allimg {
-        max-width: 50em;
-    }
-}
-
 .replay {
     position: fixed;
-    bottom: 3rem;
+    bottom: 2rem;
     font-size: 3rem;
-    right: 17px;
+    right: 3rem;
     z-index: 1 !important;
     border: none;
-    background-color: transparent;
+    background-color:transparent;
+
 }
 
 .replay i {
@@ -188,12 +122,6 @@ body {
     color: #7b6079;
     font-size: 2rem;
     opacity: 0.5;
-}
-
-@media screen and (min-width: 100em) {
-    .main {
-        max-width: 100em;
-    }
 }
 
 main {
@@ -297,56 +225,6 @@ input {
         0.125em 0.125em 0.125em 0.05em rgba(10, 10, 10, 0.9);
 
 }
-
-
-@media (min-width: 400px) {
-    form {
-        grid-template-columns: 0.4fr 1.6fr;
-        grid-gap: 8px;
-    }
-
-    label {
-        text-align: right;
-        grid-column: 1 / 2;
-    }
-
-    input {
-        grid-column: 2 / 3;
-    }
-}
-
-
-@media screen and (min-width: 25rem) {
-    .desaparece {
-        display: flex;
-        list-style-type: none;
-    }
-}
-
-@media screen and (max-width: 62.5rem) {
-    .desaparece {
-        display: flex;
-    }
-}
-
-@media screen and (max-width: 46.9rem) {
-
-    .desaparece {
-        display: none;
-    }
-
-    .btnrespon {
-        display: flex;
-    }
-}
-
-@media screen and (max-width: 40rem) {
-
-    .desaparece {
-        display: none;
-        list-style-type: none;
-    }
-}
 /* ############################################## */
 /* Comienza la pagina generica para cada articulo */
 /* ############################################## */
@@ -370,7 +248,7 @@ input {
 /* items */
 
 .grid-1 div {
-    color:white;
+    color: white;
     font-size: 20px;
     padding: 20px;
 }
@@ -378,16 +256,18 @@ input {
 /* specific item styles */
 
 .item-1 {
-    background-color:transparent;
+    background-color: transparent;
     grid-area: tit;
 }
-.item-1 h1,h2{
+
+.item-1 h1,
+h2 {
     color: #de8971;
 }
 
 .item-2 {
     background: linear-gradient(to bottom, rgb(157, 155, 155, 0.8), rgb(157, 155, 155, 0.6), rgb(157, 155, 155, 0.4));
-    border:1px solid rgb(157, 155, 155, 0.8);
+    border: 1px solid rgb(157, 155, 155, 0.8);
     grid-area: main;
     display: grid;
     grid-template-columns: 5fr 30%;
@@ -401,16 +281,30 @@ input {
         "article2 article2"
         "article3 article3";
 }
+
 .item-4 {
     grid-area: footer;
     background: linear-gradient(to bottom, rgb(157, 155, 155, 0.8), rgb(157, 155, 155, 0.6), rgb(157, 155, 155, 0.4));
     height: 18rem;
-    border:1px solid rgb(157, 155, 155, 0.8);
+    border: 1px solid rgb(157, 155, 155, 0.8);
+    height: max-content;
 }
-
+.item-4 p{
+    font-size: 0.7rem;
+    color:black;
+    display:inline-flex;
+    background-color: transparent;
+}
+.caiman{
+    width:50px;
+    height:50px;
+    
+}
 .item-2,
 .item-3,
-.item-4, p,h3{
+.item-4,
+p,
+h3 {
     color: rgb(110, 105, 105);
 }
 
@@ -446,14 +340,15 @@ input {
     height: 32rem;
     overflow-y: scroll;
 }
-.item-8 h2{
+
+.item-8 h2 {
     color: #7b6079;
 }
 
 .item-3 {
     grid-area: sidebar;
     background: linear-gradient(to bottom, rgb(157, 155, 155, 0.8), rgb(157, 155, 155, 0.6), rgb(157, 155, 155, 0.4));
-    border:1px solid rgb(157, 155, 155, 0.8);
+    border: 1px solid rgb(157, 155, 155, 0.8);
     display: grid;
     grid-template-rows: 41rem 41rem 41rem;
     grid-gap: 20px;
@@ -485,21 +380,88 @@ input {
 
 }
 
+@media screen and (min-width: 100rem) {
+    .main {
+        max-width: 100em;
+    }
+
+    .cabecera {
+        max-width: 100rem;
+    }
+
+    .container {
+        max-width: 100rem;
+    }
+}
+
+@media screen and (min-width: 25rem) {
+    form {
+        grid-template-columns: 0.4fr 1.6fr;
+        grid-gap: 8px;
+    }
+
+    label {
+        text-align: right;
+        grid-column: 1 / 2;
+    }
+
+    input {
+        grid-column: 2 / 3;
+    }
+}
+
 @media screen and (max-width: 62.5rem) {
+    .fondo {
+        background-image: url("img/fondoresponsive2.png");
+    }
+
+    .titulo .tit h1 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: .5rem;
+        color: #de8971;
+        animation-duration: 2s;
+        font-size: 5rem;
+        font-family: 'Amatic SC', Arial, Helvetica, sans-serif;
+    }
+    .replay {
+        display: none;
+    }
     .grid-1 {
         display: grid;
         width: 100%;
         margin: 5rem auto;
-    
+
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto;
         grid-gap: 5px;
-    
+
         grid-template-areas:
             "tit"
             "article"
             "main"
             "sidebar"
             "footer";
+    }
+
+    .item-5 {
+        grid-area: header;
+        background: #ddc968;
+        background-image: url("img/Perros/GoldenRetriever.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+@media screen and (max-width: 46.9rem) {
+    .allimg {
+        max-width: 50em;
+    }
+}
+
+@media screen and (max-width: 48.75rem) and (oriantation: landscape) {
+    body {
+        display: none;
     }
 }
