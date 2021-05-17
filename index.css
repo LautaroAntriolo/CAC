@@ -56,6 +56,7 @@ body {
     font-size: 9rem;
     font-family: 'Amatic SC', cursive;
 }
+
 .titulo .titysub p {
     background-color: transparent;
     padding: 1px;
@@ -66,6 +67,7 @@ body {
     animation-duration: 3s;
     --animate-delay: 0.9s;
 }
+
 .subtitulo {
     background-color: transparent;
     padding: 1rem;
@@ -84,7 +86,7 @@ body {
     right: 3rem;
     z-index: 1 !important;
     border: none;
-    background-color:transparent;
+    background-color: transparent;
 
 }
 
@@ -225,6 +227,7 @@ input {
         0.125em 0.125em 0.125em 0.05em rgba(10, 10, 10, 0.9);
 
 }
+
 /* ############################################## */
 /* Comienza la pagina generica para cada articulo */
 /* ############################################## */
@@ -244,7 +247,22 @@ input {
         "main   main     sidebar"
         "footer footer   footer";
 }
+.grid-1-history {
+    background-color: transparent;
+    display: grid;
+    width: 100%;
+    max-width: 1090px;
+    margin: 4rem 1rem;
+    height: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 180px auto 80px;
+    grid-gap: 20px;
+    color: rgb(110, 105, 105);
 
+    grid-template-areas: "main    main       main"
+        "main   main     main"
+        "footer footer   footer";
+}
 /* items */
 
 .grid-1 div {
@@ -281,6 +299,19 @@ h2 {
         "article2 article2"
         "article3 article3";
 }
+.item-2-history {
+    background: linear-gradient(to bottom, rgb(157, 155, 155, 0.8), rgb(157, 155, 155, 0.6), rgb(157, 155, 155, 0.4));
+    border: 1px solid rgb(157, 155, 155, 0.8);
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: 25rem;
+
+    grid-template-areas:
+        "header header"
+        "article article";
+}
+
 
 .item-4 {
     grid-area: footer;
@@ -289,17 +320,20 @@ h2 {
     border: 1px solid rgb(157, 155, 155, 0.8);
     height: max-content;
 }
-.item-4 p{
+
+.item-4 p {
     font-size: 0.7rem;
-    color:black;
-    display:inline-flex;
+    color: black;
+    display: inline-flex;
     background-color: transparent;
 }
-.caiman{
-    width:50px;
-    height:50px;
-    
+
+.caiman {
+    width: 50px;
+    height: 50px;
+
 }
+
 .item-2,
 .item-3,
 .item-4,
@@ -318,12 +352,40 @@ h3 {
     height: 25rem;
 }
 
+.item-5-history {
+    grid-area: header;
+    background: #ddc968;
+    background-image: url("img/WhatsApp\ Image\ 2020-09-20\ at\ 19.58.55\ \(6\).jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 25rem;
+}
+
+.item-5-history h3{
+    font-size: 4rem;
+    color: rgb(78, 70, 70);
+}
+
 .item-6 {
     background: rgb(221, 201, 104, 0.6);
     grid-area: article;
     height: 32rem;
+    margin:0px 1rem;
     overflow-y: scroll;
 }
+.item-6-history {
+    background: rgb(221, 201, 104, 0.6);
+    grid-area: article;
+    height: auto;
+    margin:2rem 1rem;
+}
+.item-6-history p {
+    padding:5px;
+    font-size: 1.3rem;
+    color: rgb(51, 48, 48);
+}
+
 
 
 .item-7 {
@@ -352,7 +414,7 @@ h3 {
     display: grid;
     grid-template-rows: 41rem 41rem 41rem;
     grid-gap: 20px;
-
+    max-height: 130rem;
     grid-template-areas:
         "article9  article9"
         "article10 article10"
@@ -379,6 +441,7 @@ h3 {
     overflow-y: scroll;
 
 }
+
 
 @media screen and (min-width: 100rem) {
     .main {
@@ -425,9 +488,11 @@ h3 {
         font-size: 5rem;
         font-family: 'Amatic SC', Arial, Helvetica, sans-serif;
     }
+
     .replay {
         display: none;
     }
+
     .grid-1 {
         display: grid;
         width: 100%;
