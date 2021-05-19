@@ -513,6 +513,25 @@ h3 {
         background-repeat: no-repeat;
         background-size: contain;
     }
+    .item-3 {
+        grid-area: sidebar;
+        background: linear-gradient(to bottom, rgb(157, 155, 155, 0.8), rgb(157, 155, 155, 0.6), rgb(157, 155, 155, 0.4));
+        border: 1px solid rgb(157, 155, 155, 0.8);
+        display: grid;
+        grid-template-rows: 4rem 27rem 4rem;
+        grid-gap:2px;
+        font-size:1rem;
+        grid-template-areas:
+            "article9  article10 article11"
+            "article9 article10 article11"
+            "article9 article10 article11 ";
+    }
+    .item-3 h3{
+        font-size: 1.7rem;
+    }
+    .item-3 p {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 46.9rem) {
